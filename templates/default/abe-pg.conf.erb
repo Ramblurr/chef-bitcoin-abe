@@ -1,0 +1,4 @@
+dbtype psycopg2
+connect-args {"database": "<%= node['bitcoin-abe']['db_name'] %>", "user": "<%= node['bitcoin-abe']['db_user'] %>" }
+upgrade
+port <%= node['bitcoin-abe']['db_port'] %>
